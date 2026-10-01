@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è il quadrante vuoto con le sue ore; se il codice non arriva, dopo 2,5 s il quadrante intero */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaQuadrante=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,56 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&amp;family=Google+Sans+Flex:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dentist","name":"Studio Dentistico 24 Ore","alternateName":"Studio Dentistico 24 Ore M. Gassem Farhangh","vatID":"IT11344330151","description":"Studio dentistico del Dott. Mohammad Gassem Farhangh, medico chirurgo odontoiatra, in Via Mecenate 32 a Milano: aperto tutti i giorni dalle 8 alle 23, su appuntamento. Urgenze, chirurgia orale, endodonzia, impianti e protesi, estetica, ortodonzia, bambini, igiene.","url":"https://rotenzark.github.io/dentista-24-ore/","image":"https://rotenzark.github.io/dentista-24-ore/img/og.jpg","telephone":"+39 02 506 1367","email":"farhangh@libero.it","address":{"@type":"PostalAddress","streetAddress":"Via Mecenate 32","postalCode":"20138","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.4550098,"longitude":9.2447681},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"23:00"}],"sameAs":["https://www.facebook.com/people/Studio-dentistico-24-ore/100068153492513"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"435","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Studio Dentistico 24 Ore",
+  "alternateName": "Studio Dentistico 24 Ore M. Gassem Farhangh",
+  "vatID": "IT11344330151",
+  "description": "Studio dentistico del Dott. Mohammad Gassem Farhangh, medico chirurgo odontoiatra, in Via Mecenate 32 a Milano: aperto tutti i giorni dalle 8 alle 23, su appuntamento. Urgenze, chirurgia orale, endodonzia, impianti e protesi, estetica, ortodonzia, bambini, igiene.",
+  "url": "https://rotenzark.github.io/dentista-24-ore/",
+  "image": "https://rotenzark.github.io/dentista-24-ore/img/og.jpg",
+  "telephone": "+39 02 506 1367",
+  "email": "farhangh@libero.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Mecenate 32",
+    "postalCode": "20138",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4550098,
+    "longitude": 9.2447681
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "23:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/people/Studio-dentistico-24-ore/100068153492513"
+  ]
+}
 </script>
 </head>
 <body>
@@ -80,7 +122,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
         <p class="apertura__frase" data-i18n="h.testo">Si riceve su appuntamento, anche la sera e nei giorni di festa: chiamate, e vi diamo l'orario. Le urgenze, e poi tutte le cure, dalla devitalizzazione all'impianto.</p>
         <p class="voto"><b class="voto__n">4,7</b> <span class="voto__su" data-i18n="h.voto">su Google, 435 recensioni</span></p>
         <blockquote class="citazione">
-          <p>«posso confermare che è davvero aperto come segnato, rispondono subito al telefono e si viene visitati il prima possibile»</p>
+          <p lang="it">«posso confermare che è davvero aperto come segnato, rispondono subito al telefono e si viene visitati il prima possibile»</p>
           <footer data-i18n="h.chi">Claudia B., in una recensione su Google</footer>
         </blockquote>
         <p class="stato" id="orarioStato">Tutti i giorni 8–23</p>
@@ -191,12 +233,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Le sere, le domeniche, le feste</h2>
     <p class="voto voto--sezione"><b class="voto__n">4,7</b> <span class="voto__su" data-i18n="d.voto">su Google, 435 recensioni</span></p>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q1">venerdì sera, 21:30</p><p class="recensione__testo">«Sono andato dal dottor Farhang un venerdì sera per un forte mal di denti. Mi ha visitato alle 21.30 e ha fatto una radiografia. […] Quando il dolore è peggiorato molto, la domenica a mezzogiorno l’ho chiamato e nel giro di un’ora e mezza abbiamo iniziato la devitalizzazione. […] L’avevo trovato cercando su internet un dentista aperto 24 ore, ma d’ora in poi lo scegliero anche per i casi non urgenti.»</p><p class="recensione__chi"><b>Caglar K.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q2">la sera di Pasqua, 21:00</p><p class="recensione__testo">«Mi si è staccata una ricostruzione in composito di un dente scheggiato la sera di Pasqua ed ero disperata perché dovevo partire la mattina dopo. Sono stata prontamente ricevuta la sera alle 21, appena un'ora dopo aver chiamato, e mi hanno perfettamente rifatto la ricostruzione ad un prezzo in linea con la media dei dentisti. Grazie mille!»</p><p class="recensione__chi"><b>Chiara E.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q3">domenica mattina presto</p><p class="recensione__testo">«Ho chiamato lo studio di domenica mattina molto presto per un’urgenza a mia mamma e mi hanno dato appuntamento nella stessa mattinata. Mia mamma è stata visitata subito, il dentista è stato chiaro nelle spiegazioni e corretto sia nel trattamento che nel prezzo. Esperienza positiva, soprattutto considerando l’urgenza e il giorno festivo.»</p><p class="recensione__chi"><b>Marco S.</b> <span data-i18n="d.t26">Google, 2026</span></p></li>
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q4">sabato sera, in viaggio</p><p class="recensione__testo">«Dente catastroficamente spezzato di sabato sera mentre ero in viaggio. Cerco una soluzione, trovo il riferimento, scrivo un messaggio al dottore, appuntamento domenica mattina. Puntuale, cortese, ma soprattutto essenziale. Concentratissimo a risolvere il problema, l’ha fatto con una manualità e una pazienza di altri tempi […]. Solo a fine lavoro si è lasciato andare a un paio di chiacchiere. […]»</p><p class="recensione__chi"><b>Annamaria H.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q5">una domenica di dicembre</p><p class="recensione__testo">«In poche ore in prossimità delle feste natalizie, mi si è rotto un dente e si è staccata un’otturazione ad un altro dente. Nonostante fosse domenica, […] mi ha ricevuta immediatamente. Insieme alla sua assistente deliziosa, in meno di due ore ha risolto completamente il problema con grande professionalità, garbo ed estrema cortesia. Mi sono sentita accolta, ascoltata e curata con attenzione. […]»</p><p class="recensione__chi"><b>Ilaria S.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q6">un appuntamento qualunque</p><p class="recensione__testo">«Il dottore è un professionista straordinario: competente, delicata e capace di mettere subito a proprio agio anche i pazienti più timorosi o con ansia. Spiega ogni trattamento con estrema chiarezza. Lo studio è pulito, moderno e accogliente. Il personale alla reception è sempre gentile e la gestione degli appuntamenti è puntuale.»</p><p class="recensione__chi"><b>Juan J.</b> <span data-i18n="d.t26">Google, 2026</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q1">venerdì sera, 21:30</p><p lang="it" class="recensione__testo">«Sono andato dal dottor Farhang un venerdì sera per un forte mal di denti. Mi ha visitato alle 21.30 e ha fatto una radiografia. […] Quando il dolore è peggiorato molto, la domenica a mezzogiorno l’ho chiamato e nel giro di un’ora e mezza abbiamo iniziato la devitalizzazione. […] L’avevo trovato cercando su internet un dentista aperto 24 ore, ma d’ora in poi lo scegliero anche per i casi non urgenti.»</p><p class="recensione__chi"><b>Caglar K.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q2">la sera di Pasqua, 21:00</p><p lang="it" class="recensione__testo">«Mi si è staccata una ricostruzione in composito di un dente scheggiato la sera di Pasqua ed ero disperata perché dovevo partire la mattina dopo. Sono stata prontamente ricevuta la sera alle 21, appena un'ora dopo aver chiamato, e mi hanno perfettamente rifatto la ricostruzione ad un prezzo in linea con la media dei dentisti. Grazie mille!»</p><p class="recensione__chi"><b>Chiara E.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q3">domenica mattina presto</p><p lang="it" class="recensione__testo">«Ho chiamato lo studio di domenica mattina molto presto per un’urgenza a mia mamma e mi hanno dato appuntamento nella stessa mattinata. Mia mamma è stata visitata subito, il dentista è stato chiaro nelle spiegazioni e corretto sia nel trattamento che nel prezzo. Esperienza positiva, soprattutto considerando l’urgenza e il giorno festivo.»</p><p class="recensione__chi"><b>Marco S.</b> <span data-i18n="d.t26">Google, 2026</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q4">sabato sera, in viaggio</p><p lang="it" class="recensione__testo">«Dente catastroficamente spezzato di sabato sera mentre ero in viaggio. Cerco una soluzione, trovo il riferimento, scrivo un messaggio al dottore, appuntamento domenica mattina. Puntuale, cortese, ma soprattutto essenziale. Concentratissimo a risolvere il problema, l’ha fatto con una manualità e una pazienza di altri tempi […]. Solo a fine lavoro si è lasciato andare a un paio di chiacchiere. […]»</p><p class="recensione__chi"><b>Annamaria H.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q5">una domenica di dicembre</p><p lang="it" class="recensione__testo">«In poche ore in prossimità delle feste natalizie, mi si è rotto un dente e si è staccata un’otturazione ad un altro dente. Nonostante fosse domenica, […] mi ha ricevuta immediatamente. Insieme alla sua assistente deliziosa, in meno di due ore ha risolto completamente il problema con grande professionalità, garbo ed estrema cortesia. Mi sono sentita accolta, ascoltata e curata con attenzione. […]»</p><p class="recensione__chi"><b>Ilaria S.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione reveal"><p class="recensione__quando" data-i18n="d.q6">un appuntamento qualunque</p><p lang="it" class="recensione__testo">«Il dottore è un professionista straordinario: competente, delicata e capace di mettere subito a proprio agio anche i pazienti più timorosi o con ansia. Spiega ogni trattamento con estrema chiarezza. Lo studio è pulito, moderno e accogliente. Il personale alla reception è sempre gentile e la gestione degli appuntamenti è puntuale.»</p><p class="recensione__chi"><b>Juan J.</b> <span data-i18n="d.t26">Google, 2026</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. La frase in alto è di un'altra paziente, sempre su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Studio+Dentistico+24+Ore+Gassem+Farhangh+Via+Mecenate+32+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -234,7 +276,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       </div>
     </div>
     <div class="cartina reveal">
-      <iframe title="Mappa: Studio Dentistico 24 Ore, Via Mecenate 32, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Studio%20Dentistico%2024%20Ore%2C%20Via%20Mecenate%2032%2C%2020138%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Studio Dentistico 24 Ore, Via Mecenate 32, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Studio%20Dentistico%2024%20Ore%2C%20Via%20Mecenate%2032%2C%2020138%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Studio+Dentistico+24+Ore%2C+Via+Mecenate+32%2C+20138+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 
@@ -246,7 +288,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__riga"><span data-i18n="f2.chi">Dott. Mohammad Gassem Farhangh, medico chirurgo odontoiatra</span> · <span data-i18n="f2.piva">P.IVA</span> 11344330151</p>
     <p class="piede__dove">Via Mecenate 32, 20138 Milano · <a href="tel:+39025061367" class="intero">02 506 1367</a> · <a href="tel:+393316287568" class="intero">331 628 7568</a> · <a href="mailto:farhangh@libero.it">farhangh@libero.it</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Tutti i giorni dalle 8 alle 23, su appuntamento</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari, voto, recensioni e la descrizione dello studio dalla scheda Google (ottobre 2026); le foto, le cure e le altre frasi dal loro sito. Il segno e il quadrante li abbiamo ridisegnati noi, dal loro logo.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari, voto, recensioni e la descrizione dello studio dalla scheda Google (ottobre 2026); le foto, le cure e le altre frasi dal loro sito. Il segno e il quadrante li abbiamo ridisegnati noi, dal loro logo.</p>
     <p><a class="piede__su" href="#inizio"><span data-i18n="f2.su">Torna su</span> <span class="freccia" aria-hidden="true">↑</span></a></p>
   </div>
 </footer>
@@ -261,5 +303,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
